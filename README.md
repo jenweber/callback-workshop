@@ -1,59 +1,52 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Callback Workshop
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Why learn about callbacks? Callbacks give you more options for organizing your code and making it readable to others. You'll have have finer control over what-happens-when as a script executes. If you get comfortable using callbacks now, you'll have a much easier time when you are tackling more complex projects and integrating server requests.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+-   Your lessons earlier today
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Write a function that takes another function as an argument.
+-   Call that function, passing in arguments.
+-   Explain in their own words what a callback is.
+-   Give an example of a time that a callback may be useful.
+
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install`.
+1.  Fork and clone this repository
+1.  Be ready to take notes
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## What is a callback?
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+Before we get into callbacks, let's review some basics of functions. You already know how to write a regular function:
+```
+const simpleAddition = function() {
+  return 1 + 2;
+}
+```
+And you know how to write a function that takes arguments:
+```
+const argAddition = function(a, b) {
+  return a + b;
+}
+```
+How would you call the function above? What if you wanted to pass in variables instead of numbers?
+```
+let bankAccount = 5;
+let newSalary = 65000
+```
+Just like you can pass variables into a function, you can pass a function into a function too! When this happens, that's what we refer to as a callback.
 
-## Leading Topic Heading
+A callback is a label that describes a function that's passed into *another* function as an argument.
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
-
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
-
-## Demo: Write a Demo
+## Demo: Whiteboard Callbacks
 
 Demos are demonstrations, and developers should give their full attention to
 them. It's a great time for them to take notes about important concepts before
